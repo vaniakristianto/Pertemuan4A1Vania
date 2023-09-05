@@ -1,0 +1,15 @@
+x = int(input())
+if x <= 1:
+    print ('Bukan bilangan prima')
+else:
+    prima = True
+    i = 2
+    while i <= x**0.5:
+        if x%i == 0:
+            prima = False
+            break
+        i += 1
+    if prima:
+        print('Bilangan prima')
+    else:
+        print('Bukan bilangan prima')
